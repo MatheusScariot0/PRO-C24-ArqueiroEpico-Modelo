@@ -50,11 +50,11 @@ function draw() {
 
   playerArcher.display();
 
-   // for (var i; i < playerArrows.length; i++) {
-   //   if (playerArrows[i] !== undefined) {
-   //     playerArrows[i].display();
-   //   }
-   // }
+   for (var i; i < playerArrows.length; i++) {
+     if (playerArrows[i] !== undefined) {
+       playerArrows[i].display();
+     }
+   }
 
    // for (var i = 0, i++) {
    //   if (playerArrows[i] !== undefined) {
@@ -62,11 +62,11 @@ function draw() {
    //   }
    // }
   
-   // for (var i = 0; i < playerArrows.length; i++) {
-   //   if (playerArrows[i] !== undefined) {
-   //     playerArrows[i].display();
-   //   }
-   // }
+  //  for (var i = 0; i < playerArrows.length; i++) {
+  //    if (playerArrows[i] !== undefined) {
+  //      playerArrows[i].display();
+  //    }
+  //  }
 
    // for (var i) {
    //   if (playerArrows[i] !== undefined) {
@@ -105,17 +105,17 @@ function draw() {
 //   }
 // }
 
-// function keyPressed() {
-//   if (keyCode === 32) {
-//     var posX = playerArcher.body.position.x;
-//     var posY = playerArcher.body.position.y;
-//     var angle = playerArcher.body.angle;
-//     var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
+function keyPressed() {
+  if (keyCode === 32) {
+    var posX = playerArcher.body.position.x;
+    var posY = playerArcher.body.position.y;
+    var angle = playerArcher.body.angle;
+    var arrow = new PlayerArrow(posX, posY, 100, 10, angle);
 
-//     Matter.Body.setAngle(arrow.body, angle);
-//     playerArrows.push(arrow);
-//   }
-// }
+    Matter.Body.setAngle(arrow.body, angle);
+    playerArrows.push(arrow);
+  }
+}
 
 // function keyPressed() {
 //   if (keyCode === 32) {
